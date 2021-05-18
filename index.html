@@ -3,17 +3,19 @@
 <head>
     <link rel="stylesheet" href="index.css">
     <script src="index.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 <h1>Coxeter Complex Generator</h1>
 <div class="row">
 <div class="column">
 <form action="index_submit" method="get" accept-charset="utf-8">
-    <label for="mst">m(s,t)</label><br>
-    <input type="text" id="mst" name="mst"><br>
-    <label for="msu">m(s,u)</label><br>
-    <input type="text" id="msu" name="msu"><br>
-    <label for="mst">m(t,u)</label><br>
-    <input type="text" id="mtu" name="mtu"><br>
+    <label for="mst">\(m(s,t)\)</label><br>
+    <input type="text" id="mst" name="mst"><input type="checkbox" id="mstinf"><label for="mstinf">&infin;</label><br><br>
+    <label for="msu">\(m(s,u)\)</label><br>
+    <input type="text" id="msu" name="msu"><input type="checkbox" id="msuinf"><label for="msuinf">&infin;</label><br><br>
+    <label for="mst">\(m(t,u)\)</label><br>
+    <input type="text" id="mtu" name="mtu"><input type="checkbox" id="mtuinf"><label for="mtuinf">&infin;</label><br><br><br>
     <button type="button" onclick="generateCoxeterComplex()">Generate Coxeter Complex</button>
     <button type="button" onclick="clearPage()">Clear</button>
 </div>
