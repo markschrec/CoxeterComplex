@@ -1,1 +1,25 @@
-<h1>Coxeter Complexes</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<h1>Coxeter Complex Generator</h1>
+<div class="row">
+<div class="column">
+<form action="index_submit" method="get" accept-charset="utf-8">
+    <label for="mst">m(s,t)</label><br>
+    <input type="text" id="mst" name="mst"><br>
+    <label for="msu">m(s,u)</label><br>
+    <input type="text" id="msu" name="msu"><br>
+    <label for="mst">m(t,u)</label><br>
+    <input type="text" id="mtu" name="mtu"><br>
+    <button type="button" onclick="generateCoxeterComplex()">Generate Coxeter Complex</button>
+    <button type="button" onclick="clearPage()">Clear</button>
+</div>
+<div class="column">
+    <p id="output">The Coxeter Complex will be displayed here.</p>
+</div>
+</div>
+</form>
+</html>
